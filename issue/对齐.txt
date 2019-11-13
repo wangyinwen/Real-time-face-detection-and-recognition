@@ -1,0 +1,7 @@
+python src/align_dataset_mtcnn.py E:/colect-face/jian-kong/ E:\colect-face\jian-kong_160 --image_size 160 --margin 32
+
+
+
+for N in {1..4}; do python src/align_dataset_mtcnn.py /media/hyz/hu-sir/heshen-data /media/hyz/hu-sir/heshen-data_160-0.37 --image_size 160 --margin 32 --random_order --gpu_memory_fraction 0.16 & done
+
+

@@ -1,0 +1,35 @@
+安装环境windows
+1.安装Anaconda，运行Anaconda Prompt
+2.conda create -n tensorflow python=3.5
+3.activate tensorflow 
+4.pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorflow==1.7
+
+5.在TensorFlow安装环境下安装
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple scipy
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple scikit-learn
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple opencv-python
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple h5py
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple matplotlib
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple Pillow
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple requests
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple psutil
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple easydict
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple scikit-image
+至此系统环境搭建完成，本代码兼容windows和Ubuntu。
+
+
+相关运行指令：
+python compare8.py 建库，即加载data/gump文件夹的人脸图片，提取特征存储到库
+python compare9.py 文件夹建库，即加载data/gump1文件夹下的文件目录，每个文件夹里面可以存储多张一个人的多张图片，提取特征存储到库
+python Images_face_recognition.py 加载images文件夹里面的指定图片，识别结果图片存到images/show.jpg
+python Images_face_recognition-more.py 批量测试images文件所有图片，识别结果存到images_result文件夹
+python Images_face_recognition-more-chinese.py批量测试images文件所有图片，识别结果存到images_result文件夹，支持中文
+python real_time_face_recognition.py 摄像头测试代码，支持英文和数字
+python real_time_face_recognition-chinese.py 摄像头测试代码，支持英文、数字、中文
+
+face.py脚本修改一张图片检测多脸和最大脸：根据实际需求修改
+face.py  73行
+faces = self.detect.find_max_faces(image)表示检测最大人脸
+faces = self.detect.find_faces(image) 表示检测图片所有人脸
+
+运行GIU界面执行 face.py文件

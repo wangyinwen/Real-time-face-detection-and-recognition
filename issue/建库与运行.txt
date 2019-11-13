@@ -1,0 +1,2 @@
+在data/ceshi文件夹放入样本，可以命名为图片人物的名称，现在请使用英文。然后运行compare4.py
+运行完compare.py后，运行real_time_face_recognition.py即可以打开摄像头识别了

@@ -1,0 +1,5 @@
+终端进入python-FaceRec文件夹
+运行：
+tensorboard --logdir=logs/facenet --port 6006
+然后在浏览器中复制这个网址：
+http://localhost:6006/

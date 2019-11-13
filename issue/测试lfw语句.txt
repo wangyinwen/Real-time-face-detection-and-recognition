@@ -1,0 +1,16 @@
+python src/validate_on_lfw.py data/lfw_mtcnnpy_160 src/20170511-185253
+
+python src/validate_on_lfw.py data/lfw_mtcnnpy_1.27 src/20170512-110547
+
+python src/validate_on_lfw.py /home/hyz/Dimg_db_1215-160 src/20180330-162531
+
+
+python src/validate_on_lfw.py K:/facedatas/Dimg_db_1215-src/20170512-110547 --lfw_pairs data/Dimg_db_1215-160.txt
+加载官方预训练模型训练出的模型
+python src/validate_on_lfw.py K:/facedatas/Dimg_db_1215-160 src/20180202-161058 --lfw_pairs data/Dimg_db_1215-160.txt
+不加载官方预训练模型训练出的模型
+python src/validate_on_lfw.py K:/facedatas/Dimg_db_1215-160 src/20180315-121551 --lfw_pairs data/Dimg_db_1215-160.txt
+
+
+
+python src/validate_on_lfw.py /home/hyz/testface src/20170512-110547 --lfw_pairs data/my_newpairs.txt

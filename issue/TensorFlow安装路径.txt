@@ -1,0 +1,14 @@
+activate tensorflow
+
+1.安装Anaconda3
+2.运行Anaconda Prompt
+3.conda create -n tensorflow python=3.5
+4.activate tensorflow 
+5.pip install --upgrade https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-1.2.0-cp35-cp35m-win_amd64.whl
+6.pip install sklearn
+7.pip install scipy
+8.pip install opencv-python
+9.pip install Pillow
+
+参考博客：http://blog.csdn.net/u012052268/article/details/74202439
+activate tensorflow

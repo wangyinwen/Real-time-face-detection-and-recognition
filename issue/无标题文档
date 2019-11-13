@@ -1,0 +1,1 @@
+for N in {1..4}; do python src/align_dataset_mtcnn.py /home/hyz/vggface2-train /home/hyz/vggface2-train-0.37 --image_size 160 --margin 32 --random_order --gpu_memory_fraction 0.22 & done
